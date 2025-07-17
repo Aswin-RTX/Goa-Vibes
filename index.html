@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goa Tourism</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!--some things are Adapted from chatgpt-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+        <h1>Goa Vibes</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger -->
+        <ul id="nav-links">
+          <li><a href="#attractions">Top Attractions</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#guides">Travel Guides</a></li>
+          <li><a href="#stats">Visitor Stats</a></li>
+          <li><a href="#stay">Stay & Transport</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Plan Trip</a></li>
+        </ul>
+      </nav>
+      
+  </header>
+
+  <section class="hero">
+    <img src="Assets/herosection.jpg" alt="Goa Image" class="hero-img">
+    <div class="hero-text">
+      <h2>Discover the Beauty of Goa</h2>
+      <p>Explore beaches, forts, culture, and more.</p>
+    </div>
+  </section>
+  
+
+  <section id="attractions" class="section animate">
+    <h2>Top Attractions</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="Assets/baga.jpg" alt="Beach" />
+        <h3>Baga Beach</h3>
+        <p>Relax and party at one of Goa's most popular beaches.</p>
+      </div>
+      <div class="card">
+        <img src="Assets/Aguada-Fort.jpg" alt="Fort" />
+        <h3>Aguada Fort</h3>
+        <p>Explore Portuguese history and stunning sea views.</p>
+      </div>
+      <div class="card">
+        <img src="Assets/basilica-born-jesus.webp" alt="Church" />
+        <h3>Basilica of Bom Jesus</h3>
+        <p>A UNESCO World Heritage Site with beautiful architecture.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section animate">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="Assets/8asovra9hft5e4vfhl54o9hg0gha_arambol_beach.webp" alt="">
+      <img src="Assets/dudhsagar-falls.jpg" alt="">
+      <img src="Assets/palolem.jpg" alt="">
+      <img src="Assets/casino.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="guides" class="section animate">
+    <h2>Travel Guides</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Local Food</h3>
+        <p>Try Goa's famous fish curry, pork vindaloo, and bebinca dessert.</p>
+      </div>
+      <div class="card">
+        <h3>Festivals</h3>
+        <p>Experience vibrant festivals like Carnival, Shigmo, and Sao Joao.</p>
+      </div>
+      <div class="card">
+        <h3>Shopping</h3>
+        <p>Shop for handicrafts, spices, and clothes at flea markets and local bazaars.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats" class="section animate">
+    <h2>Tourist Footfall Statistics</h2>
+    <canvas id="visitorChart" width="300" height="120"></canvas>
+  </section>
+
+  <section id="stay" class="section animate">
+    <h2>Stay & Transport</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Hotels</h3>
+        <p>Find budget and luxury hotels across North and South Goa.</p>
+      </div>
+      <div class="card">
+        <h3>Airbnb</h3>
+        <p>Choose from beachfront villas, cottages, and homestays.</p>
+      </div>
+      <div class="card">
+        <h3>Transport</h3>
+        <p>Travel by buses, scooters, taxis, or rent bikes to explore Goa easily.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section animate">
+    <h2>Traveler Reviews</h2>
+    <div class="review-slider">
+      <div class="review active">"Goa is simply magical. Loved every bit!" - Riya</div>
+      <div class="review">"Best beaches, food, and vibes. Will visit again!" - Arjun</div>
+      <div class="review">"A perfect getaway with lots to explore!" - Sarah</div>
+    </div>
+    <button onclick="nextReview()">Next Review</button>
+  </section>
+
+  <section id="contact" class="section animate">
+    <h2>Plan Your Trip</h2>
+    <form id="tripForm">
+      <label for="days">Trip Duration (in days):</label>
+      <input type="number" id="days" name="days" min="1" required />
+      <button type="submit">Suggest Itinerary</button>
+    </form>
+    <p id="suggestion"></p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Goa Vibes</h3>
+        <p>Helping travelers explore goa since 2025. Our mission is to guide your adventures.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>📧 hello@goavibes.com</p>
+        <p>📞 +911234567899</p>
+    
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Goa Vibes Adventures. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
